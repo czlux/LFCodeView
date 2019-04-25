@@ -16,7 +16,7 @@ public class PwdView:UIView,UIKeyInput{
     
    public var shapLayer = CAShapeLayer.init()
     
-   public override init(frame: CGRect) {
+    override init(frame: CGRect) {
 
         super.init(frame: frame)
        
@@ -60,7 +60,7 @@ public class PwdView:UIView,UIKeyInput{
 
     }
   
-   public private var keyboardType: UIKeyboardType{
+    private var keyboardType: UIKeyboardType{
         
         return .decimalPad
     }
