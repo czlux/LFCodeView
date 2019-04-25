@@ -12,7 +12,7 @@ import UIKit
 //UIKeyInput
 public class PwdView:UIView,UIKeyInput{
    
-    private var text: String = ""
+    var text: String = ""
     
     var shapLayer = CAShapeLayer.init()
     
