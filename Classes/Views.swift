@@ -12,11 +12,11 @@ import UIKit
 //UIKeyInput
 public class PwdView:UIView,UIKeyInput{
    
-    var text: String = ""
+   public var text: String = ""
     
-    var shapLayer = CAShapeLayer.init()
+   public var shapLayer = CAShapeLayer.init()
     
-    override init(frame: CGRect) {
+   public override init(frame: CGRect) {
 
         super.init(frame: frame)
        
@@ -44,41 +44,41 @@ public class PwdView:UIView,UIKeyInput{
      
     }
     
-    required init?(coder aDecoder: NSCoder) {
+   public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override var canBecomeFirstResponder: Bool{
+   public override var canBecomeFirstResponder: Bool{
         return true
     }
   
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+   public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
        
         _ =  self.becomeFirstResponder()
 
     }
   
-    private var keyboardType: UIKeyboardType{
+   public private var keyboardType: UIKeyboardType{
         
         return .decimalPad
     }
   
-    var hasText: Bool{
+   public var hasText: Bool{
          return text.count > 0
     }
     
-    func insertText(_ text: String) {
+   public func insertText(_ text: String) {
         print(text)
         self.text.append(text)
       
     }
     
-    func deleteBackward() {
+   public func deleteBackward() {
        
     }
-    override func draw(_ rect: CGRect) {
+   public override func draw(_ rect: CGRect) {
 
        
     }
