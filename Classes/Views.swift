@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //UIKeyInput
-class PwdView:UIView,UIKeyInput{
+public class PwdView:UIView,UIKeyInput{
    
     private var text: String = ""
     
