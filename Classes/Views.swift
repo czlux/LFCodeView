@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //UIKeyInput
-public class PwdView:UIView,UIKeyInput{
+public class PwdView:UIView{
    
    public var text: String = ""
     
@@ -60,24 +60,24 @@ public class PwdView:UIView,UIKeyInput{
 
     }
   
-    private var keyboardType: UIKeyboardType{
-        
-        return .decimalPad
-    }
-  
-   public var hasText: Bool{
-         return text.count > 0
-    }
-    
-   public func insertText(_ text: String) {
-        print(text)
-        self.text.append(text)
-      
-    }
-    
-   public func deleteBackward() {
-       
-    }
+//    private var keyboardType: UIKeyboardType{
+//        
+//        return .decimalPad
+//    }
+//  
+//   public var hasText: Bool{
+//         return text.count > 0
+//    }
+//    
+//   public func insertText(_ text: String) {
+//        print(text)
+//        self.text.append(text)
+//      
+//    }
+//    
+//   public func deleteBackward() {
+//       
+//    }
    public override func draw(_ rect: CGRect) {
 
        
